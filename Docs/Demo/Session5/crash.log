@@ -1,0 +1,2 @@
+Caught exception: ReferenceError: nonExistingFunction is not defined
+Caught exception: ReferenceError: test is not defined
