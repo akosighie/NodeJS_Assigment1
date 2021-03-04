@@ -1,0 +1,50 @@
+### Get all pokemons
+GET http://localhost:3000/pokemons
+
+### Get all servants
+GET http://localhost:3000/servants
+
+### Create Jalter
+POST http://localhost:3000/servants
+
+{
+    "name": "Jeanne-Alter",
+    "class": "Avenger",
+    "alignment": "Chaotic"
+}
+
+### Create Mash
+POST http://localhost:3000/servants
+
+{
+    "name": "Mash Kyrielight",
+    "class": "Shielder",
+    "alignment": "Lawful"
+}
+
+
+
+### Create Jin Woo
+POST http://localhost:3000/servants
+
+{
+    "name": "Jin Woo",
+    "class": "Monarch",
+    "alignment": "Human"
+}
+
+### Delete Jeanne-Alter
+DELETE http://localhost:3000/servants?name=Jeanne-Alter
+
+
+### Delete Jin Woo
+DELETE http://localhost:3000/servants?name=Jin Woo
+
+### Update Jin Woo
+PUT http://localhost:3000/servants?name=Jin Woo
+
+{
+    "class": "Shadow Monarch",
+    "alignment": "Hunter Assoc.",
+    "skill":"Summon"
+}

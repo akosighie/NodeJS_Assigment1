@@ -1,5 +1,5 @@
 {
-  "name": "loancalculator",
+  "name": "assigment",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -9,7 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.17.1",
     "node-notifier": "^9.0.0",
+    "nodemon": "^2.0.7",
     "yargs": "^16.2.0"
   }
 }

@@ -1,0 +1,14 @@
+{
+  "servants": [
+    {
+      "name": "Mash Kyrielight",
+      "class": "Shielder",
+      "alignment": "Lawful"
+    },
+    {
+      "name": "Jin Woo",
+      "class": "Shadow Monarch",
+      "alignment": "test"
+    }
+  ]
+}
