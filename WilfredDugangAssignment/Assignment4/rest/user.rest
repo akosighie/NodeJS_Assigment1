@@ -1,0 +1,88 @@
+
+### Get All
+GET http://localhost:8080/users
+
+
+### Get By Username (Jinwoo)
+GET http://localhost:8080/users/user/Jinwoo
+
+### Create Jinwoo
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+    "userName": "Jinwoo",
+    "emailAddress": "jinwoo@yahoo.com",
+    "firstName": "Jin",
+    "lastName": "Woo"
+}
+
+### Create Itachi
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+    "userName": "iuchiha",
+    "emailAddress": "iuchiha@yahoo.com",
+    "firstName": "Itachi",
+    "lastName": "Uchiha"
+}
+
+### Create Naruto
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+    "userName": "unaruto",
+    "emailAddress": "unaruto@yahoo.com",
+    "firstName": "Naruto",
+    "lastName": "Uzumaki"
+}
+
+### Update Itachi
+PUT http://localhost:8080/users/user/iuchiha
+Content-Type: application/json
+
+{
+    "userName": "iuchiha",
+    "emailAddress": "iuchiha@gmail.com",
+    "firstName": "Itachiiii",
+    "lastName": "Uchihaaaa"
+}
+
+### Delete unaruto
+DELETE http://localhost:8080/users/user/unaruto
+Content-Type: application/json
+
+### Update not existing user
+PUT http://localhost:8080/users/user/nouser
+Content-Type: application/json
+
+{
+    "userName": "iuchiha",
+    "emailAddress": "iuchiha@gmail.com",
+    "firstName": "Itachiiii",
+    "lastName": "Uchihaaaa"
+}
+
+### Update Itachi validate email
+PUT http://localhost:8080/users/user/iuchiha
+Content-Type: application/json
+
+{
+    "userName": "iuchiha",
+    "emailAddress": "xxxxx",
+    "firstName": "Itachiiii",
+    "lastName": "Uchihaaaa"
+}
+
+### Create new user with invalid email
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+    "userName": "newUser",
+    "emailAddress": "1111",
+    "firstName": "Naruto",
+    "lastName": "Uzumaki"
+}

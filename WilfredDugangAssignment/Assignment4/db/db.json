@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "userName": "Jinwoo",
+      "emailAddress": "jinwoo@yahoo.com",
+      "firstName": "Jin",
+      "lastName": "Woo"
+    },
+    {
+      "userName": "iuchiha",
+      "emailAddress": "iuchiha@gmail.com",
+      "firstName": "Itachiiii",
+      "lastName": "Uchihaaaa"
+    },
+    {
+      "userName": "unaruto",
+      "emailAddress": "unaruto@yahoo.com",
+      "firstName": "Naruto",
+      "lastName": "Uzumaki"
+    }
+  ]
+}
