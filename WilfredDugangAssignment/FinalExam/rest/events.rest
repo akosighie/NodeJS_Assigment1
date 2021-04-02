@@ -1,0 +1,36 @@
+
+### Get All
+GET http://localhost:8080/api/events
+
+
+### Get By Username (Jinwoo)
+GET http://localhost:8080/api/events/1
+
+### Create 
+POST http://localhost:8080/api/events
+Content-Type: application/json
+
+{
+    "eventId": "1",
+    "eventName": "Naruto Season6",
+    "eventType": "Movie",
+    "startDate": "3/11/2020",
+    "endDate": "3/12/2020"
+}
+
+
+### Update 
+PUT http://localhost:8080/api/events
+Content-Type: application/json
+
+{
+    "eventId": "1",
+    "eventName": "Naruto Season6-1",
+    "eventType": "Series",
+    "startDate": "3/11/2020",
+    "endDate": "3/12/2020"
+}
+
+### Delete unaruto
+DELETE http://localhost:8080/api/events/1
+Content-Type: application/json

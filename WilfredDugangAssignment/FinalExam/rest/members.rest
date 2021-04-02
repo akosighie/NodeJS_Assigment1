@@ -1,0 +1,35 @@
+
+### Get all members
+GET http://localhost:8080/api/members/
+
+
+### Get member by memberid Username (Jinwoo)
+GET http://localhost:8080/api/members/1
+
+### Create 1st Member
+POST http://localhost:8080/api/members/
+Content-Type: application/json
+
+{
+    "memberId": "1",
+    "memberName": "member1",
+    "joinedDate": "03/02/2021",
+    "status": "Active"
+}
+
+
+### Update member
+PUT http://localhost:8080/api/members
+Content-Type: application/json
+
+{
+    "memberId": "1",
+    "memberName": "member1-1",
+    "joinedDate": "03/02/2021",
+    "status": "Inactive"
+}
+
+### Delete member
+DELETE http://localhost:8080/api/members/1
+Content-Type: application/json
+
