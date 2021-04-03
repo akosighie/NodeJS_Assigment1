@@ -11,6 +11,7 @@ app.use('/api/members/', memberRouter);
 app.use('/api/events/', eventRouter);
 
 
+
 app.listen(port, () => {
     console.log(`Started server at port: ${port}`);   
 })

@@ -8,7 +8,8 @@ const {
         getEventsSearch,
         createEvent,
         updateEvent,
-        deleteEvent
+        deleteEvent,
+        exportEventToExcel
     }
 } = require('../controllers');
 
@@ -17,13 +18,13 @@ const eventRouter = express.Router();
 eventRouter.get('/', getAllEvents);
 eventRouter.get('/:eventId', getEventsById);
 eventRouter.get('/search?eventname=[searchEventName]&datestart=[searchDateStart]&dataend=[searchDateEnd]', getEventsSearch);
+eventRouter.get('/:export?eventId=[searchEventName]', exportEventToExcel);
 eventRouter.post('/', [
     check("eventName", "Event Name is required").not().isEmpty(),
     check("eventType", "Event Type is required").not().isEmpty(),
     check("startDate", "Start Date  is required").not().isEmpty(),
     check("endDate", "End Date  is required").not().isEmpty()
 ], createEvent);
-
 eventRouter.put('/', [
     check("eventName", "Event Name is required").not().isEmpty(),
     check("eventType", "Event Type is required").not().isEmpty(),

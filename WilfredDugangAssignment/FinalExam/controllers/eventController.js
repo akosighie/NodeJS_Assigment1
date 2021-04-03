@@ -1,6 +1,7 @@
 const { check, validationResult, body } = require('express-validator'); 
 const { eventsContext, attendanceContext, membersContext } = require('../db');
 const { Event } = require('../models');
+const { excelExport } = require('../export');
 
 const getAllEvents = async (req, res) => {
     const events = await eventsContext.getAllEvents();
@@ -92,11 +93,19 @@ const deleteEvent = async (req, res) => {
     }
 }
 
+const exportEventToExcel = async (req, res) => {
+    const { eventId } = req.params;
+
+    console.log(eventId);
+  console.log(req);
+}
+
 module.exports = {
     getAllEvents,
     getEventsById,
     getEventsSearch,
     createEvent,
     updateEvent,
-    deleteEvent
+    deleteEvent,
+    exportEventToExcel
 }

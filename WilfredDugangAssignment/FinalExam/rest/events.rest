@@ -3,7 +3,7 @@
 GET http://localhost:8080/api/events
 
 
-### Get By Username (Jinwoo)
+### Get 
 GET http://localhost:8080/api/events/3
 
 ### Create 
@@ -32,6 +32,10 @@ Content-Type: application/json
     "endDate": "3/12/2020"
 }
 
-### Delete unaruto
+### Delete
 DELETE http://localhost:8080/api/events/1
 Content-Type: application/json
+
+
+### export
+GET http://localhost:8080/api/events/export?eventId=1
