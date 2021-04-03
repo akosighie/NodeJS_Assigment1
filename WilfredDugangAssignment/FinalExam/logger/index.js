@@ -1,3 +1,3 @@
 module.exports = {
-    serviceLogger : require('./logger')
+    serviceLogger : require('./logger'),
 }
