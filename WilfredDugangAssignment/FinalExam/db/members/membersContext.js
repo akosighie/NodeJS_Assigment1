@@ -20,22 +20,18 @@ class MembersContext extends DatabaseContext {
 
   async addMember (memberDetails) {
 
-     //check if username exist
-    //  const  isExist = await this.getByAny('userName', userDetails.userName);
+     //check if member name exist
+     const  isExist = await this.getByAny('memberName', memberDetails.memberName);
 
-    //  if(Object.keys(isExist).length > 0)
-    //  return {
-    //   statusCode: 409
-    // }; 
-
-    // if(!validator.validate(userDetails.emailAddress))
-    //    return {
-    //   statusCode: 400
-    // }; 
+     if(Object.keys(isExist).length > 0)
+     return {
+      statusCode: 409
+    }; 
      
      await this.insert(memberDetails);
        return {
-         statusCode: 200
+         statusCode: 200,
+         success: true
        }; 
 
   } 

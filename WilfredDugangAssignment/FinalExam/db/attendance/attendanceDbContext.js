@@ -4,40 +4,31 @@ const path = require('path');
 
 const adapter = new FileAsync(path.join(__dirname, 'db.json'));
 
-class MembersDatabaseContext {
+class EventsDatabaseContext {
   constructor (collectionName) {
     this.collectionName = collectionName;
     this.dbContext = low(adapter).then(context => {
       context.defaults({ [collectionName]: [] }).write();
-
       return context;
     });
   }
 
-  async getAll () {
+  async getByEventId (eventId) {
     const context = await this.dbContext;
 
     return context
       .get(this.collectionName)
+      .filter({'eventId': eventId })
       .value() || [];
   }
 
-  async getByFilter (filter = {}) {
+  async getByMemberId (memberId) {
     const context = await this.dbContext;
 
     return context
       .get(this.collectionName)
-      .filter(filter)
-      .value();
-  }
-
-  async getByAny (propName, propValue) {
-    const context = await this.dbContext;
-
-    return context
-    .get(this.collectionName)
-    .find({ [propName]: propValue })
-    .value() || {};
+      .filter({'memberId': memberId })
+      .value() || [];
   }
 
   async insert (data = {}) {
@@ -49,22 +40,6 @@ class MembersDatabaseContext {
       .write();
   }
 
-  async update (memberId, data = {}) {
-    const context = await this.dbContext;
-
-    context
-      .get(this.collectionName)
-      .find({ memberId })
-      .assign(data)
-      .write();
-  }
-
-  async delete (memberId) {
-    const context = await this.dbContext;
-
-    context.get(this.collectionName).remove({ memberId }).write();
-
-  }
 }
 
-module.exports = MembersDatabaseContext;
+module.exports = EventsDatabaseContext;

@@ -11,7 +11,9 @@ class EventsContext extends DatabaseContext {
   } 
 
   async getEventsById (eventId) {
-    return await this.getByAny('eventId', eventId);
+
+    const event = await this.getByAny('eventId', eventId);
+    return event;
   } 
 
   async getEventsSearch (search) {

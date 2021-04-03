@@ -1,5 +1,6 @@
 module.exports = {
     Member: require('./memberModel'),
-    Event: require('./eventModel')
+    Event: require('./eventModel'),
+    Attendance: require('./attendanceModel')
 }
 

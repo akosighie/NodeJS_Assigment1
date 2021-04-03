@@ -11,10 +11,15 @@ POST http://localhost:8080/api/members/
 Content-Type: application/json
 
 {
-    "memberId": "1",
-    "memberName": "member1",
+    "memberId": "3",
+    "memberName": "Ate",
     "joinedDate": "03/02/2021",
-    "status": "Active"
+    "status": "Active",
+    "eventId": "2",
+    "eventName": "Naruto Season1",
+    "timeIn": "1:00pm",
+    "timeOut": "3:00pm",
+    "eventAttendance": []
 }
 
 

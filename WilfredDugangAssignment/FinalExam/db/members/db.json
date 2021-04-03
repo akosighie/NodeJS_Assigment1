@@ -1,0 +1,25 @@
+{
+  "members": [
+    {
+      "memberId": "1",
+      "memberName": "Tito",
+      "joinedDate": "03/02/2021",
+      "status": "Active",
+      "eventAttendance": []
+    },
+    {
+      "memberId": "2",
+      "memberName": "Kuya",
+      "joinedDate": "03/02/2021",
+      "status": "Active",
+      "eventAttendance": []
+    },
+    {
+      "memberId": "3",
+      "memberName": "Ate",
+      "joinedDate": "03/02/2021",
+      "status": "Active",
+      "eventAttendance": []
+    }
+  ]
+}

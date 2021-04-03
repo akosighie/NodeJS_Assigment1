@@ -4,18 +4,19 @@ GET http://localhost:8080/api/events
 
 
 ### Get By Username (Jinwoo)
-GET http://localhost:8080/api/events/1
+GET http://localhost:8080/api/events/3
 
 ### Create 
 POST http://localhost:8080/api/events
 Content-Type: application/json
 
 {
-    "eventId": "1",
-    "eventName": "Naruto Season6",
-    "eventType": "Movie",
-    "startDate": "3/11/2020",
-    "endDate": "3/12/2020"
+ "eventId": "1",
+    "eventName": "Boxing",
+    "eventType": "Sports",
+    "startDate": "1/12/2020",
+    "endDate": "3/12/2021",
+    "memberAttendance":[]
 }
 
 
