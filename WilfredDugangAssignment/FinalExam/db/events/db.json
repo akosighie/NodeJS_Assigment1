@@ -5,12 +5,80 @@
       "eventName": "Dota TI 100",
       "eventType": "Games",
       "startDate": "1/12/2020",
-      "endDate": "3/12/2021"
+      "endDate": "3/12/2021",
+      "memberAttendance": [
+        {
+          "Name": "Tito",
+          "TimeIn": "1:00pm",
+          "TimeOut": "3:00pm"
+        },
+        {
+          "Name": "Kuya",
+          "TimeIn": "1:00pm",
+          "TimeOut": "3:00pm"
+        }
+      ]
     },
     {
       "eventId": "2",
       "eventName": "Naruto Season1",
       "eventType": "Movie",
+      "startDate": "1/12/2020",
+      "endDate": "3/12/2021"
+    },
+    {
+      "eventId": "1",
+      "eventName": "Boxing",
+      "eventType": "Sports",
+      "startDate": "1/12/2020",
+      "endDate": "3/12/2021"
+    },
+    {
+      "eventId": "1",
+      "eventName": "Boxing",
+      "eventType": "Sports",
+      "startDate": "1/12/2020",
+      "endDate": "3/12/2021"
+    },
+    {
+      "eventId": "1",
+      "eventName": "Boxing",
+      "eventType": "Sports",
+      "startDate": "1/12/2020",
+      "endDate": "3/12/2021"
+    },
+    {
+      "eventId": "1",
+      "eventName": "Boxing",
+      "eventType": "Sports",
+      "startDate": "1/12/2020",
+      "endDate": "3/12/2021"
+    },
+    {
+      "eventId": "1",
+      "eventName": "Boxing",
+      "eventType": "Sports",
+      "startDate": "1/12/2020",
+      "endDate": "3/12/2021"
+    },
+    {
+      "eventId": "1",
+      "eventName": "Boxing",
+      "eventType": "Sports",
+      "startDate": "1/12/2020",
+      "endDate": "3/12/2021"
+    },
+    {
+      "eventId": "1",
+      "eventName": "Boxing",
+      "eventType": "Sports",
+      "startDate": "1/12/2020",
+      "endDate": "3/12/2021"
+    },
+    {
+      "eventId": "1",
+      "eventName": "Boxing",
+      "eventType": "Sports",
       "startDate": "1/12/2020",
       "endDate": "3/12/2021"
     },

@@ -31,6 +31,14 @@
       "memberName": "Ate",
       "timeIn": "1:00pm",
       "timeOut": "3:00pm"
+    },
+    {
+      "eventId": "2",
+      "eventName": "Naruto Season1",
+      "memberId": "3",
+      "memberName": "Ate",
+      "timeIn": "1:00pm",
+      "timeOut": "3:00pm"
     }
   ]
 }
